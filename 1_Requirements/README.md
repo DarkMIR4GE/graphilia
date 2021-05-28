@@ -18,9 +18,6 @@ Even though using infix notation is more convenient as far as human readability 
 As the whole project involved the usage of free (or free versions of) software only, it is completely free of monetary costs.
 
 
-## Defining the System
-
-
 ## SWOT Analysis
 
 ![SWOT Analysis](https://github.com/DarkMIR4GE/graphilia/blob/main/1_Requirements/Graphilia_SWOT_Analysis.png)
@@ -52,12 +49,13 @@ ID | Description | HR_ID | Status
 --------- | -------- | -------- | ---------
 LR_01 | Buttons to adjust range of displayed axes | HR_01 | Implemented
 LR_02 | Pan/Zoom/Rotate functionalities using mouse | HR_01 | Future
-LR_03 | Acceptance of mathematical constants like e,pi | HR_02 | Implemented
-LR_04 | Acceptance of further functions like hyperbolic... | HR_03 | Implemented
-LR_05 | Acceptance of Min and Max functions | HR_03 | Future
-LR_06 | Identify occurrences of imaginary/undefined/indeterminate values | HR_04 | Implemented
-LR_07 | Options to plot multiple functions in the same axes | HR_05 | Implemented
-LR_08 | 3D representation of functions in 2 variables | HR_05 | Implemented
-LR_09 | Plot graphs from implicit function inputs | HR_05 | Incomplete
-LR_10 | Integrate 2D,3D and implicit subparts together into one| HR_05 | Future
-LR_11 | Option to save displayed figure in image format | HR_05 | Future
+LR_03 | Realisation of this program into an application | HR_01 | Future
+LR_04 | Acceptance of mathematical constants like e,pi | HR_02 | Implemented
+LR_05 | Acceptance of further functions like hyperbolic... | HR_03 | Implemented
+LR_06 | Acceptance of Min and Max functions | HR_03 | Future
+LR_07 | Identify occurrences of imaginary/undefined/indeterminate values | HR_04 | Implemented
+LR_08 | Options to plot multiple functions in the same axes | HR_05 | Implemented
+LR_09 | 3D representation of functions in 2 variables | HR_05 | Implemented
+LR_10 | Plot graphs from implicit function inputs | HR_05 | Incomplete
+LR_11 | Integrate 2D,3D and implicit subparts together into one| HR_05 | Future
+LR_12 | Option to save displayed figure in image format | HR_05 | Future
