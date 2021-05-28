@@ -23,9 +23,14 @@ As the whole project involved the usage of free (or free versions of) software o
 
 ## SWOT Analysis
 
+![SWOT Analysis](https://github.com/DarkMIR4GE/graphilia/blob/main/1_Requirements/Graphilia_SWOT_Analysis.png)
+
 
 ## 5W's and 1H
 
+<p align="center">
+  <img width="800" src="https://github.com/DarkMIR4GE/graphilia/blob/main/1_Requirements/Graphilia_5W1H_Chart.png">
+</p>
 
 
 ## Detail Requirements
@@ -54,3 +59,5 @@ LR_06 | Identify occurrences of imaginary/undefined/indeterminate values | HR_04
 LR_07 | Options to plot multiple functions in the same axes | HR_05 | Implemented
 LR_08 | 3D representation of functions in 2 variables | HR_05 | Implemented
 LR_09 | Plot graphs from implicit function inputs | HR_05 | Incomplete
+LR_10 | Integrate 2D,3D and implicit subparts together into one| HR_05 | Future
+LR_11 | Option to save displayed figure in image format | HR_05 | Future
