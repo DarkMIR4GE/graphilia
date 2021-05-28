@@ -34,7 +34,7 @@ As the whole project involved the usage of free (or free versions of) software o
 
 ### High Level Requirements:
 
-ID | Description | Status
+HR_ID | Description | Status
 --------- | -------- | ---------
 HR_01 | User-friendly Graphical User Interface with axes | Implemented
 HR_02 | User should be able to input function in text format | Implemented
@@ -45,7 +45,7 @@ HR_06 | Clear axes functionality | Implemented
 
 ### Low Level Requirements:
 
-ID | Description | HR_ID | Status
+LR_ID | Description | HR_ID | Status
 --------- | -------- | -------- | ---------
 LR_01 | Buttons to adjust range of displayed axes | HR_01 | Implemented
 LR_02 | Pan/Zoom/Rotate functionalities using mouse | HR_01 | Future
