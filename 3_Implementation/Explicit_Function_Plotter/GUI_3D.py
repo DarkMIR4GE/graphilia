@@ -124,7 +124,7 @@ class MatplotlibCanvas(FigureCanvas) :
             self.MinZ = np.ndarray.min(z)
         if (np.ndarray.max(z) > self.MaxZ) and (np.ndarray.max(z) != np.float64('inf')):
             self.MaxZ = np.ndarray.max(z)        
-        self.axes.plot_surface(x, y, z, cmap = 'viridis')
+        self.axes.plot_surface(x, y, z)#, cmap = 'viridis')
         self.axes.set_xlabel('X', fontsize = 13)
         self.axes.set_ylabel('Y', fontsize = 13)
         self.axes.set_zlabel('Z', fontsize = 13)
