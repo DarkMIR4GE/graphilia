@@ -36,9 +36,9 @@ As the whole project involved the usage of free (or free versions of) software o
 
 HR_ID | Description | Status
 --------- | -------- | ---------
-HR_01 | User-friendly Graphical User Interface with axes | Implemented
+HR_01 | A Graphical User Interface with axes, textboxes and buttons | Implemented
 HR_02 | User should be able to input function in text format | Implemented
-HR_03 | System should accept trigonometric/logarithmic/… functions | Implemented
+HR_03 | System should accept mathematical functions | Implemented
 HR_04 | System should recognise invalid inputs/functions | Implemented
 HR_05 | System should plot the user inputted function | Implemented
 HR_06 | Clear axes functionality | Implemented
@@ -51,7 +51,7 @@ LR_01 | Buttons to adjust range of displayed axes | HR_01 | Implemented
 LR_02 | Pan/Zoom/Rotate functionalities using mouse | HR_01 | Future
 LR_03 | Realisation of this program into an application | HR_01 | Future
 LR_04 | Acceptance of mathematical constants like e,pi | HR_02 | Implemented
-LR_05 | Acceptance of further functions like hyperbolic... | HR_03 | Implemented
+LR_05 | Acceptance of further functions like hyperbolic | HR_03 | Implemented
 LR_06 | Acceptance of Min and Max functions | HR_03 | Future
 LR_07 | Identify occurrences of imaginary/undefined/indeterminate values | HR_04 | Implemented
 LR_08 | Options to plot multiple functions in the same axes | HR_05 | Implemented
