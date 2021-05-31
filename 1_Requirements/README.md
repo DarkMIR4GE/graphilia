@@ -38,7 +38,7 @@ HR_ID | Description | Status
 --------- | -------- | ---------
 HR_01 | A Graphical User Interface with axes, textboxes and buttons | Implemented
 HR_02 | User should be able to input function in text format | Implemented
-HR_03 | System should accept mathematical functions | Implemented
+HR_03 | System should accept predefined mathematical functions | Implemented
 HR_04 | System should recognise invalid inputs/functions | Implemented
 HR_05 | System should plot the user inputted function | Implemented
 HR_06 | Clear axes functionality | Implemented
