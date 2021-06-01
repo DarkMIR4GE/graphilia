@@ -335,12 +335,12 @@ void Input()
 {
   err=NONE;
   clrscr();
-  char c=1;
   cout<<"\n\n\n\t\t\tEnter your function : "
       <<"\n\n\n\t\t\tf(x) = ";
   int i=0;
   while(1)
   {
+    char c=1;
     c=getche();
     if(c==8)
     {
@@ -757,8 +757,8 @@ float DecodeFn2(char &fn,float x1,float x2)
 void Output()
 {
   int gdriver = DETECT, gmode, errorcode;
-  int X,Y,flag=1;
-  float x,y,dy,dx;
+  int X,Y;
+  float x,dy,dx;
   errorcode = graphresult();
   initgraph(&gdriver, &gmode, "C:\\TURBOC3\\BGI");
   if (errorcode != grOk)
@@ -779,8 +779,8 @@ void Output()
     line(0,Uy/dy,X,Uy/dy);
   for(x=Lx; x<=Ux; x+=dx/prsn)
   {
-    flag=1;
-    y=getY(x,flag);
+    int flag=1;
+    int y=getY(x,flag);
     if(flag&&y<=Uy&&y>=Ly)
       putpixel((x-Lx)/dx,(Uy-y)/dy,RED);
   }
@@ -904,10 +904,9 @@ void Stack::push(char ele)
 
 char Stack::pop()
 {
-  char ret;
   if(top!=-1)
   {
-    ret=stack1[top];
+    char ret=stack1[top];
     top--;
     return ret;
   }

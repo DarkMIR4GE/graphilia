@@ -2,7 +2,6 @@
 
 A function visualization software in python3 that takes in expressions in text format and plots corresponding 2D/3D plots.
 
-
 ## Folder Structure
 
 Folder | Description
@@ -14,18 +13,18 @@ Folder | Description
 5_Report | Conclusive report for the project
 6_Images | Test images for software execution
 
-
 ## Tools Used
 
 Programming Languages:
+
   1. Spyder3
   2. Turbo C++
 
 UML Diagrams:
+
   1. [draw.io](https://app.diagrams.net/)
   2. [Canva](https://www.canva.com/)
   3. [Visual Paradigm Online](https://online.visual-paradigm.com/)
-
 
 ## References
 

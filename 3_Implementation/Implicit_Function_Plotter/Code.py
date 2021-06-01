@@ -5,7 +5,7 @@ def codeInp(In):
     i = 0       #index of input In
     Out = []
     while (i < len(In)):
-        
+
         if (In[i].isdigit() or In[i]=='.'): #to store numerical values in a array
             temp = []
             while ((In[i].isdigit()) or (In[i]=='.')):
@@ -15,10 +15,10 @@ def codeInp(In):
                     break
             Out.append(float(''.join(temp)))
             i -= 1
-            
+
         elif (In[i] in 'xyz+-*/^()'): #assuming no fn start with x
             Out.append(In[i])
-            
+
         elif (In[i] == '['):    #Greatest integer function
             Out.append('floor')
             Out.append('(')
@@ -27,7 +27,7 @@ def codeInp(In):
             Out.append('(')
         elif (In[i] in ']}'):
             Out.append(')')
-            
+
         elif (In[i].isalpha()): #to code function into a single char
             temp = []
             while (In[i].isalpha()):
@@ -42,10 +42,10 @@ def codeInp(In):
             else:
                 Out.append(''.join(temp))
             i -= 1
-            
+
         i += 1
     return Out
-        
+
 
 def braceChk(In):   #checks if braces are inputted given correctly
     stack = []
@@ -65,31 +65,31 @@ def braceChk(In):   #checks if braces are inputted given correctly
         return 0
     else:
         return 1    #1 means correct, 0 means invalid input
-    
-    
+
+
 def precedence (optr):
     if (optr == '~'):
-        return 7    
+        return 7
     elif (optr.isalpha()):
         return 6
     elif (optr == '^'):
         return 5
     elif (optr == '/'):
-        return 4    
+        return 4
     elif (optr == '*'):
         return 3
     elif (optr == '-'):
-        return 2    
+        return 2
     elif (optr == '+'):
         return 1
     else:
         return 0
 
-    
-def Infix_2_Postfix (In):            
-    stack = []  
+
+def Infix_2_Postfix (In):
+    stack = []
     Out = []    #output array
-    
+
     def pushOptr ():
         if (In[i] == '-'):
             if (i == 0):
@@ -105,7 +105,7 @@ def Infix_2_Postfix (In):
                 stack.append('+')
         else:
             stack.append(In[i])
-            
+
     for i in range(len(In)):
         if (type(In[i]) == float) or (In[i]=='x'):
             Out.append(In[i])
@@ -127,7 +127,7 @@ def Infix_2_Postfix (In):
                     Out.append(stack.pop())
                     if (stack == []):
                         break
-                    
+
                 pushOptr()
     while (stack != []):
         Out.append(stack.pop())

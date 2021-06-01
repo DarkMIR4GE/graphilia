@@ -14,7 +14,6 @@ HT_07 | Check if brace mismatches break the program | SUCCESS | Requirement base
 HT_08 | Check if the program plots the input function | SUCCESS | Requirement based
 HT_09 | Check if the clear button clears the figure | SUCCESS | Requirement based
 
-
 ## Unit Test (Low Level Test)
 
 LT_ID | HT_ID | Description |  Result | Type of Test

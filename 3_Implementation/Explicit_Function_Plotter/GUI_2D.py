@@ -3,7 +3,6 @@ from PyQt5.QtCore import *
 
 from matplotlib.backends.backend_qt4agg import FigureCanvasQTAgg as FigureCanvas
 from matplotlib.figure import Figure
-from matplotlib.pyplot import imsave
 import numpy as np
 import sys
 
@@ -20,14 +19,14 @@ class MainWindow(QMainWindow):
     def __init__(self, parent=None):
         super(MainWindow, self).__init__(parent)
 
-        """ CENTRAL WIDGET """ 
         self.form = Form()
         self.setCentralWidget(self.form)
-        self.setMinimumSize(QSize(500, 500))    
+        self.setMinimumSize(QSize(500, 500))
         self.setWindowTitle("GRAPHILIA")
-         
+
 class Form(QDialog) :
     def __init__(self, parent=None) :
+        '''init display UI'''
         super(Form, self).__init__(parent)
         self.plot = MatplotlibCanvas()
         self.function_edit = QLineEdit('')
@@ -53,7 +52,7 @@ class Form(QDialog) :
         self.Max_edit.returnPressed.connect(self.updateUI)
         self.Min_edit.returnPressed.connect(self.updateUI)
         self.clear_button.clicked.connect(self.plot.initial_figure)
-        
+
     def updateUI(self):
         try :
             Min = float(self.Min_edit.text())
@@ -73,6 +72,7 @@ class Form(QDialog) :
 
 class MatplotlibCanvas(FigureCanvas) :
     def __init__(self, parent=None, width=5, height=4, dpi=100) :
+        '''init axes UI'''
         self.fig = Figure(figsize=(width, height), dpi=dpi)
         self.axes = self.fig.add_subplot(111)
         self.initial_figure()
@@ -92,12 +92,12 @@ class MatplotlibCanvas(FigureCanvas) :
         self.axes.axvline(0, color = 'black')
         self.axes.axhline(0, color = 'black')
         self.axes.grid()
-        
+
     def update_figure(self, x, y):
         if (min(y) < self.minY) and (min(y) != -np.float64('inf')):
             self.minY = min(y)
         if (max(y) > self.maxY) and (max(y) != np.float64('inf')):
-            self.maxY = max(y)        
+            self.maxY = max(y)
         if (max(x) > 0) and (min(x) < 0):
             self.axes.axvline(0, color = 'black')
         if (max(y) > 0) and (min(y) < 0):
@@ -110,7 +110,7 @@ class MatplotlibCanvas(FigureCanvas) :
         self.axes.set_ylim(self.minY, self.maxY)
         self.axes.grid()
         self.draw()
-        
+
 if not QApplication.instance():
     app = QApplication(sys.argv)
 else:

@@ -283,21 +283,21 @@ int Input()
 {
   err=NONE;
   clrscr();
-  char c=1;
   cout<<"\n\n\n\t\t\tEnter your expression: "
       <<"\n\n\n\t\t\t";
   int i=0,j=0,k=0,l=0;
   while(1)
   {
+    char c=1;
     c=getche();
     if(c=='=')
     {
       if(j<1)
       {
-	fn1[j][i]='\0';
-	j++;
-	k=i;
-	i=0;
+        fn1[j][i]='\0';
+        j++;
+        k=i;
+        i=0;
       }
       l++;
       continue;
@@ -306,20 +306,20 @@ int Input()
     {
       if(i>0)
       {
-	i--;
-	cout<<" \b";
-	if(fn1[j][i]=='=')
-	{
-	  l--;
-	  if(l==1)
-	  {
-	    j=0;
-	    i=k;
-	  }
-	}
+        i--;
+        cout<<" \b";
+        if(fn1[j][i]=='=')
+        {
+          l--;
+          if(l==1)
+          {
+            j=0;
+            i=k;
+          }
+        }
       }
       else
-	cout<<" ";
+	      cout<<" ";
     }
     else if(c==13)
     {
@@ -901,9 +901,9 @@ void Stack::push(char ele)
 
 char Stack::pop()
 {
-  char ret;
   if(top!=-1)
   {
+    char ret;
     ret=stack1[top];
     top--;
     return ret;

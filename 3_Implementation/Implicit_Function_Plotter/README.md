@@ -4,18 +4,18 @@
 
 An **implicit function** refers to functions represented as g(x1,x2,...) = f(x1,x2,...), where a single variable is not fully isolated by itself to either side of the equality. While it might be possible to rewrite such a function into it's explicit counterpart, this is not always true. eg: sin(x+y) = xy
 
-**Note: THIS CODE IS INCOMPLETE**
+**NOTE: THIS CODE IS INCOMPLETE**
 
 ## Programming Language
 
 The whole code is written in **Python3** making use of **Spyder3** as an IDE.
 
-#### Python Libraries used:
+### Python Libraries used
+
 - sys
 - numpy
 - matplotlib
 - PyQt5
-
 
 ## Code files
 

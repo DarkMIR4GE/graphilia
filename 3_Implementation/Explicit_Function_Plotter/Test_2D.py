@@ -13,12 +13,12 @@ while (1):
     Inp_expr = input('f(x) = ')
     #Inp_expr = '1+{cos(x^2+x)^2.2}*e^pi'
     #Inp_expr = 'd(tan(sec(x^3)))/d(x)'
-    
+
     if (Code.braceChk(Inp_expr)):
         Infx_expr = Code.codeInp(Inp_expr)
         Postfx_expr = Code.Infix_2_Postfix(Infx_expr)
     y = Decode.value(Postfx_expr, x)
-    
+
     fig = plt.figure(figsize=(10,5))
     ax = fig.add_subplot(111)
     ax.cla()
@@ -34,4 +34,3 @@ while (1):
     c = input('continue (y/n)? ')
     if (c == 'n'):
         break
-
