@@ -2,14 +2,14 @@
 
 ## Introduction
 
-This is just a hobby project I took upon myself, during my school days, to explore the possibilities of C++ base graphics and postfix conversions. The same acted as a prototype for *Graphilia* here. 
-
+This is just a hobby project I took upon myself, during my school days, to explore the possibilities of C++ base graphics and postfix conversions. The same acted as a prototype for *Graphilia* here.
 
 ## Programming Language
 
 The whole code is written in **C++** making use of **Turbo C++** as an IDE.
 
-#### C++ Libraries used:
+### C++ Libraries used
+
 - conio
 - math
 - dos
@@ -20,7 +20,6 @@ The whole code is written in **C++** making use of **Turbo C++** as an IDE.
 - ctype
 - graphics
 - process
-
 
 ## Code files
 

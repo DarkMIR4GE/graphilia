@@ -10,7 +10,6 @@
 
 ![exponential decay with oscillations](https://github.com/DarkMIR4GE/graphilia/blob/main/6_Images/2D_Graph4.png)
 
-
 ## Sample Screenshots for 3D plotter
 
 ![spatial ripples-viridis](https://github.com/DarkMIR4GE/graphilia/blob/main/6_Images/3D_Graph0.png)

@@ -4,18 +4,17 @@
 
 An **explicit function** refers to functions represented as y = f(x1,x2,...), where the independent variable is fully isolated by itself in one of the sides of the equality. That is, the independent variable can be expressed solely in terms of the dependent variables.
 
-
 ## Programming Language
 
 The whole code is written in **Python3** making use of **Spyder3** as an IDE.
 
-#### Python Libraries used:
+### Python Libraries used
+
 - sys
 - numpy
 - matplotlib
 - mpl_toolkits
 - PyQt5
-
 
 ## Code files
 

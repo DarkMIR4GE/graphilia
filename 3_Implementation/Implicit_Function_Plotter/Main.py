@@ -16,10 +16,6 @@ prec = 10e-3
 x = np.linspace(minX, maxX, precX)
 y = np.linspace(minY, maxY, precY)
 Inp = input('Expression : ')
-#Inp = '1+{cos(x^2+x)^2.2}*e^pi' ##############
-#Inp = 'd(x^3)/d(x)'
-#Inp = 'y^2+x^2=25'
-#Inp = 'y=2'
 
 expr_1 = []
 flag = 0
@@ -47,11 +43,9 @@ for yi in y:
     root_x = [x[i] for i in range(len(val)) if np.abs(val[i])<prec]
     root_y = np.ndarray(len(root_x))
     root_y[:] = yi
-#    print(root_x)
-#    print(root_y)
     x_plt = np.append(x_plt, root_x)
     y_plt = np.append(y_plt, root_y)
-    
+
 plt.figure(figsize = (12,6))
 plt.axvline(0, color = 'green')
 plt.axhline(0, color = 'green')
