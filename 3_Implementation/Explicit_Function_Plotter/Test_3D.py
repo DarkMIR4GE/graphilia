@@ -46,7 +46,7 @@ for yi in y:
 X = np.outer(np.ones_like(y),x)
 Y = np.outer(y,np.ones_like(x))
 Z = np.reshape(z,(len(x),len(y)))
-    
+
 fig = plt.figure(figsize = (12,7))
 ax = fig.gca(projection = '3d')
 ax.plot_surface(X, Y, Z, cmap = 'viridis')

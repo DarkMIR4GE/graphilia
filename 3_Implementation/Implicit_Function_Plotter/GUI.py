@@ -18,7 +18,7 @@ prec = 500
 
 class MainWindow(QMainWindow):
     def __init__(self, parent=None):
-        '''init disp ui'''
+        """init disp ui"""
         super(MainWindow, self).__init__(parent)
 
         self.form = Form()
@@ -73,7 +73,7 @@ class Form(QDialog) :
 
 class MatplotlibCanvas(FigureCanvas) :
     def __init__(self, parent=None, width=5, height=4, dpi=100) :
-        '''init axes ui'''
+        """init axes ui"""
         self.fig = Figure(figsize=(width, height), dpi=dpi)
         self.axes = self.fig.add_subplot(111)
         self.initial_figure()

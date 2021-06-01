@@ -26,7 +26,7 @@ class MainWindow(QMainWindow):
 
 class Form(QDialog) :
     def __init__(self, parent=None) :
-        '''init display UI'''
+        """init display UI"""
         super(Form, self).__init__(parent)
         self.plot = MatplotlibCanvas()
         self.function_edit = QLineEdit('')
@@ -72,7 +72,7 @@ class Form(QDialog) :
 
 class MatplotlibCanvas(FigureCanvas) :
     def __init__(self, parent=None, width=5, height=4, dpi=100) :
-        '''init axes UI'''
+        """init axes UI"""
         self.fig = Figure(figsize=(width, height), dpi=dpi)
         self.axes = self.fig.add_subplot(111)
         self.initial_figure()
